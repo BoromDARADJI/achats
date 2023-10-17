@@ -1,0 +1,29 @@
+#home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 5%;
+    margin-top: 50px;
+  
+   
+}
+.boutton{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.alert-message{
+    margin-top: 1%;
+    text-align: center;
+    padding-top: 2px;
+    color: green;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 15px;
+    left: 40%;
+  word-spacing: 3px;
+
+}

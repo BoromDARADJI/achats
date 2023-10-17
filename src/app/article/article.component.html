@@ -1,0 +1,19 @@
+<div class="card" style="width: 18rem;">
+    <img [src]="imagearticle" class="card-img-top" [alt]="textimagearticle">
+    <div class="card-body">
+      <h5 class="card-title">Titre :{{titrearticle}}</h5>
+      <span *ngIf="disponiblearicle==true"> Disponible</span>
+      <span *ngIf="disponiblearicle==false">Indisponible</span>
+    <h5 class="card-title">prix : {{prixarticle}}</h5>
+ 
+      <p class="card-text"> description : {{descriptionarticle}}</p>
+    <div class="boutton">
+        <a href="#" class="btn btn-primary m-2" (click)="like()">Like </a>
+        <p> nblike :{{nblike}}</p>
+        <a href="#" class="btn btn-primary m-2" (click)="deslike()">deslike</a>
+        <p>{{commentearticle}}</p>
+      <input type="text" [(ngModel)]="commentearticle"/>
+      
+    </div>
+    </div>
+  </div>
